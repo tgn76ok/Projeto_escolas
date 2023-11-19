@@ -1,0 +1,21 @@
+{% extends 'global/base.html' %}
+
+{% block title %}Provas | {% endblock title %}
+
+{% block content %}
+
+<br/>
+<br/>
+<br/>
+
+{% for prova in provas %}
+<section id="download">
+    <!-- {{prova.name}} -->
+    <a href="{% url 'provas:Prova' prova.id %}" >
+        {{prova.name}}
+    </a>
+</section>
+
+
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'global/base.html' %}
+
+{% block title %}{{ provas.name }} | {% endblock title %}
+
+{% block content %}
+<br/>
+<br/>
+<br/>
+
+{{provas.name}}
+    {% for arquivo in arquivos %}
+       <p> {{arquivo.name}} </p>
+       <a href="http://127.0.0.1:8000/media/{{arquivo.pdf}}" target="_blank" rel="noopener noreferrer"> Ver</a>
+    {% endfor %}
+{% endblock content %}

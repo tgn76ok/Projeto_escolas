@@ -1,0 +1,19 @@
+{% extends 'global/base.html' %}
+
+{% block title %}Redacaos | {% endblock title %}
+
+{% block content %}
+
+<br/>
+<br/>
+<br/>
+
+{% for prova in Redacaos %}
+    <!-- {{prova.name}} -->
+        {{prova.name}}
+    
+
+
+
+{% endfor %}
+{% endblock content %}
