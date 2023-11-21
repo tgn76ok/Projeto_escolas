@@ -4,18 +4,18 @@
 
 {% block content %}
 
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
 
-{% for prova in provas %}
 <section id="download">
+    {% for prova in provas %}
     <!-- {{prova.name}} -->
-    <a href="{% url 'provas:Prova' prova.id %}" >
+    <a class="itensProva" href="{% url 'provas:Prova' prova.id %}">
         {{prova.name}}
     </a>
+
+
+    {% endfor %}
 </section>
-
-
-{% endfor %}
 {% endblock content %}

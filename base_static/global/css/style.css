@@ -1,19 +1,26 @@
 /* Estilos para a mensagem de boas-vindas */
 h1 {
     font-size: 36px;
-    color: #333; /* Cor do texto (cinza escuro) */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
-    animation: bounce 1.5s infinite; /* Animação de pulsação */
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: bounce 1.5s infinite;
     text-align: center;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-10px);
     }
+
     60% {
         transform: translateY(-5px);
     }
@@ -21,25 +28,23 @@ h1 {
 
 a {
     display: inline-block;
-    padding: 12px 24px; /* Aumento do espaçamento interno */
-    background-color: #007F86;;
+    padding: 12px 24px;
+    background-color: #007F86;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição suave */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
     background-color: #ADD8E6;
-    transform: scale(1.05); /* Efeito de escala suave no hover */
+    transform: scale(1.05);
 }
 
 body {
     background-color: #ADD8E6;
- 
 }
 
-/* Centralizar o carrossel horizontalmente */
 .carousel {
     margin: 0 auto;
 }
@@ -47,17 +52,18 @@ body {
 .carousel-inner img {
     display: flex;
     align-items: center;
-    border: 2px solid #ADD8E6; /* Adiciona uma borda preta de 2px */
-    border-radius: 10px; /* Arredonda as pontas da imagem */
-    width: 300px; /* Defina a largura desejada */
-    height: 300px; /* Defina a altura desejada */
+    border: 2px solid #ADD8E6;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
 }
+
 .inicio {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     background-color: #007F86;
-    padding: 10px 0px; /* Ajustei o valor do padding horizontal */
+    padding: 10px 0;
     border: 2px solid #007F86;
     border-radius: 15px;
     margin-top: 5px;
@@ -66,43 +72,265 @@ body {
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-
 a.btn-primary {
     background-color: #007F86;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 20px; /* Aumentando o tamanho da fonte */
     padding: 10px 10px;
     font-size: 15px;
 }
 
 a.btn-primary:hover {
-    background-color: #005960; /* Uma cor mais escura no hover */
+    background-color: #ADD8E6;
     transform: scale(1.05);
-    font-size: 15px; /* Reduza o tamanho da fonte no hover */
-    padding: 20px 20px
-
+    font-size: 15px;
+    padding: 20px 20px;
+    border-color: #ADD8E6;
+    color: #333;
 }
-.offcanvas-header{
+
+.offcanvas-header {
     background-color: #ADD8E6;
 }
-.offcanvas{
+
+.offcanvas {
     background-color: azure;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
 .center-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.faq-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.answer {
+    margin-bottom: 0;
+}
+
+/* Adicione estas regras para estilizar as legendas do carrossel */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background: #007F86;
+    padding: 10px;
+    width: 100%;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Ajuste para melhor espaçamento entre a legenda e a borda inferior */
+.carousel-inner {
+    position: relative;
+}
+
+.itensProva {
+    display: block;
+    text-align: center;
+    background-color: #007F86;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 20px auto;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+.itensProva:hover {
+    text-decoration: none;
+    color: #026369;
+}
+
+.TypeProvas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.TypeProvasT {
+    text-align: center;
+    justify-content: center;
+}
+
+.TypeProva {
+    margin: 10px;
+}
+
+/* ------------- */
+.mainNotas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #4b9eba;
+}
+
+.notas {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #007F86;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 550px;
+    min-width: 300px;
+    width: 50vw;
+}
+
+#notaForm {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 80vh; /* 100% da altura da viewport */
+
+}
+
+#inputNo {
+    margin: 20px 0px;
+    width: 70%;
+}
+
+/* ------------------ */
+
+.center {
+    text-align: center;
+}
+
+.custom-alert {
+    padding: 10px;
+    /* Ajuste o valor conforme necessário */
+    font-size: 14px;
+    /* Ajuste o valor conforme necessário */
+}
+
+.titulo {
+    animation: piscar 1s infinite alternate;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
+.caixa {
+    border: 2px solid #3498db;
+    /* Cor da borda e espessura */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    /* Cor de fundo da caixa */
+    text-align: center;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
 }
 
 
+.passo-passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.passo-passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.passo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
 
+.paragrafo {
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #007F86;
+    background-color: #fff;
+    padding: 10px;
+}
 
+.carousel-item iframe {
+    width: 50px;
+    height: 80px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 150px;
+    background-color: #007F86;
+    border: 1px solid #007F86;
+    border-radius: 5px;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #007F86;
+}
+
+.card {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.listname {
+    padding-left: 10px;
+    /* Ajuste o valor conforme necessário */
+    list-style-position: inside;
+    color: #007F86;
+    font-weight: bold;
+}

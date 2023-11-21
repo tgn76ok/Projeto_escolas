@@ -3,13 +3,20 @@
 {% block title %}{{ provas.name }} | {% endblock title %}
 
 {% block content %}
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
+<h2 class="TypeProvasT">
 
-{{provas.name}}
+    {{provas.name}}
+</h2>
+<div class="TypeProvas">
     {% for arquivo in arquivos %}
-       <p> {{arquivo.name}} </p>
-       <a href="http://127.0.0.1:8000/media/{{arquivo.pdf}}" target="_blank" rel="noopener noreferrer"> Ver</a>
+    <div class="TypeProva">
+
+        <p> {{arquivo.name}} </p>
+        <a href="http://127.0.0.1:8000/media/{{arquivo.pdf}}" target="_blank" rel="noopener noreferrer"> Ver</a>
+    </div>
     {% endfor %}
+</div>
 {% endblock content %}

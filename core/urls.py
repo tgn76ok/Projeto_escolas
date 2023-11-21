@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Home.urls')),
     path('Prova/', include('ProvaAntiga.urls')),
+    path('login/', include('authors.urls')),
+
 ]
 
 

@@ -4,14 +4,23 @@
 
 {% block content %}
 
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
 
 {% for prova in Redacaos %}
-    <!-- {{prova.name}} -->
-        {{prova.name}}
-    
+<div class="Res">
+    <h1>{{prova.name}}</h1>
+    <h3>Introdução</h3>
+    <p>{{prova.Introducao}}</p>
+    <h3>Desenvolvimento</h3>
+    <p>{{prova.Desenvolvimento}}</p>
+    <h3>Conclusão</h3>
+    <p>{{prova.Conclusao}}</p>
+    <img src="http://127.0.0.1:8000/media/{{prova.img}}" alt="">
+
+</div>
+
 
 
 

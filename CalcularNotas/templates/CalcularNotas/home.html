@@ -3,36 +3,44 @@
 {% block title %}Notas| {% endblock title %}
 
 {% block content %}
-<br/>
-<br/>
-<br/>
-
-<div class="notas" >
-    {% if messages %}
+<!-- {% if messages %}
 <div class="main-content center container messages-container">
     {% for message in messages %}
-        <div class="message {{ message.tags }}">
-            {{ message }}
-        </div>
+    <div class="message {{ message.tags }}">
+        {{ message }}
+    </div>
     {% endfor %}
 </div>
-{% endif %}
-    <h1>Simule sua nota:</h1>
-    <form  action="{% url 'home:notas' %}" method="POST" id="notaForm">
-        {% csrf_token %}
-        <label for="Nota1">Sua nota em Linguagens, Códigos e suas Tecnologias:</label>
-        <input type="number" name="Nota1"><br><br>
-        <label for="Nota2">Sua nota em Ciências da Natureza:</label>
-        <input type="number" name="Nota2"><br><br>
-        <label for="Nota3">Sua nota em Ciências Humanas:</label>
-        <input type="number" name="Nota3"><br><br>
-        <label for="Nota4">Matemática e suas tecnologias:</label>
-        <input type="number" name="Nota4"><br><br>
-        <label for="Nota5">Sua nota em Redação:</label>
-        <input type="number" name="Nota5"><br><br>
-        <button type="submit"  id="calcularButton">Calcular Nota</button>
-        <div id="resultado" class="resultado"></div>
+{% endif %} -->
+<div class="mainNotas">
 
-    </form>
+    <div class="notas">
+        <h1>Simule sua nota:</h1>
+        <br>
+        <form action="{% url 'home:notas' %}" method="POST" id="notaForm">
+            {% csrf_token %}
+            <label for="Nota1">Sua nota em Linguagens, Códigos e suas Tecnologias:</label>
+            <input id="inputNo" type="number" name="Nota1"><br><br>
+            <label for="Nota2">Sua nota em Ciências da Natureza:</label>
+            <input id="inputNo" type="number" name="Nota2"><br><br>
+            <label for="Nota3">Sua nota em Ciências Humanas:</label>
+            <input id="inputNo" type="number" name="Nota3"><br><br>
+            <label for="Nota4">Matemática e suas tecnologias:</label>
+            <input id="inputNo" type="number" name="Nota4"><br><br>
+            <label for="Nota5">Sua nota em Redação:</label>
+            <input id="inputNo" type="number" name="Nota5"><br><br>
+            <button type="submit" id="calcularButton">Calcular Nota</button>
+            <div id="resultado" class="resultado"></div>
+
+        </form>
+        {% if valor %}
+        <br>
+        <div class="main-content center container messages-container">
+            <h2>
+                Sua nota média: {{valor}}
+            </h2>
+        </div>
+        {% endif %}
+    </div>
 </div>
 {% endblock content %}

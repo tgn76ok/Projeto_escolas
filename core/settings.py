@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'Home.apps.HomeConfig',
     'ProvaAntiga.apps.ProvaantigaConfig',
     'CalcularNotas.apps.CalcularnotasConfig',
-    'Redações.apps.RedaçõesConfig'
+    'Redações.apps.RedaçõesConfig',
+    'authors.apps.AuthorsConfig'
 ]
 
 MIDDLEWARE = [
