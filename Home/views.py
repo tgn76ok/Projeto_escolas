@@ -12,3 +12,7 @@ def Dicas(request):
 def Assuntos(request):
 
     return render(request, 'Home/Assuntos.html')
+
+def cronometro(request):
+
+    return render(request, 'Home/cronometro.html')

@@ -16,6 +16,7 @@ class Prova(models.Model):
     name = models.CharField(max_length=250)
     
     files = models.ManyToManyField(File, verbose_name="pdfs")
-      
+    ano = models.IntegerField()
+    
     def __str__(self):
         return self.name

@@ -15,8 +15,10 @@
     <div class="TypeProva">
 
         <p> {{arquivo.name}} </p>
-        <a href="http://127.0.0.1:8000/media/{{arquivo.pdf}}" target="_blank" rel="noopener noreferrer"> Ver</a>
+        <a href="{{url_pdf}}{{arquivo.pdf}}" target="_blank" rel="noopener noreferrer"> Ver</a>
     </div>
     {% endfor %}
 </div>
 {% endblock content %}
+
+http://127.0.0.1:8000/media/{{arquivo.pdf}}
