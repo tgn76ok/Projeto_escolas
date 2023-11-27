@@ -371,3 +371,40 @@ button:hover {
     line-height: 1.5;
     white-space: pre-line; /* Adiciona quebra de linha */
 }
+
+
+/* -------------------- */
+
+#subtitulo{
+    font-size: 18px;
+    color: #007F86;
+    font-weight: bold;
+    border: 2px solid #007F86;
+    text-align: center;
+    justify-content: center;
+}
+.introducao{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007F86;
+    text-align: center;
+    animation: none;
+}
+/* --------------------- */
+.Red1 {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.imgProva{
+    display: block;
+    margin: 20px auto;
+    height: auto;
+}

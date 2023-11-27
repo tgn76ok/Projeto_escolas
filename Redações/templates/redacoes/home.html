@@ -9,7 +9,7 @@
 <br />
 
 {% for prova in Redacaos %}
-<div class="Res">
+<div class="Red1">
     <h1>{{prova.name}}</h1>
     <h3>Introdução</h3>
     <p>{{prova.Introducao}}</p>
@@ -17,8 +17,7 @@
     <p>{{prova.Desenvolvimento}}</p>
     <h3>Conclusão</h3>
     <p>{{prova.Conclusao}}</p>
-    <img src="http://127.0.0.1:8000/media/{{prova.img}}" alt="">
-    <img src="{{url_pdf}}{{prova.img}}" >
+    <img id="imgProva" src="{{url_pdf}}{{prova.img}}" >
 </div>
 
 
